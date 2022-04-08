@@ -13,7 +13,7 @@ const Portfolio = () => {
           </div>
           <h3>Personal Portfolio</h3>
           <h5>My personal porfolio created with ReactJS. </h5>
-          <a href="https://github.com" className="btn" target="_blank">
+          <a href="https://github.com/julesglad/portfolio-app" className="btn" target="_blank">
             Github
           </a>
         </article>
