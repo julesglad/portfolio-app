@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Rock+3D&family=Sacramento&display=swap");
+
+.header__container {
+  height: 100%;
+  position: relative;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+  gap: 2rem;
+  width: 100%;
+  background-image: url("../../assets/backgroundclouds.png");
+  background-size: cover;
+  color: black;
+  opacity: 0.8;
+}
+
+.header__container h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+  font-family: "Rock 3D", cursive;
+  margin-right: 1rem;
+}
+
+.header__container h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(2, 20, 32);
+}
+
+/* cta styling */
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+/* socials styling */
+
+.header__socials {
+  display: relative;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  left: 3%;
+  top: 3rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 3rem;
+  background: black;
+}
+
+.header__socials-icon {
+  color: black;
+  font-size: 2rem;
+}
+
+/* cloud styling */
+
+.cloud__container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.cloudone {
+  width: 500px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: left;
+  overflow: hidden;
+}
+
+@keyframes cloudone {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* Text animation */
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 7px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* media queries */
+
+@media screen and (min-width: 450px) {
+  .header__container h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 3rem;
+    font-family: "Rock 3D", cursive;
+  }
+
+  .header__container h5 {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(2, 20, 32);
+  }
+
+  .cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    position: fixed;
+    left: 3%;
+    top: 75%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cloudone {
+    display: none;
+  }
+}

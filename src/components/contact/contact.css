@@ -1,0 +1,90 @@
+.contact__background {
+  background: url(../../assets/trees-6863878.svg);
+  background-size: cover;
+}
+
+.container.contact__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact__option {
+  background: var(--color-primary);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.contact__option:hover {
+  background: var(--color-primary-dark-varient);
+  border-color: var(--color-primary-variant);
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--color-primary-variant);
+}
+
+.contact__option a:hover {
+  color: white;
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: var(--color-primary-variant-opac);
+  border: 2px solid var(--color-primary);
+  resize: none;
+  color: white;
+  transition: var(--transition);
+}
+
+textarea:hover {
+  background: var(--color-primary-dark-varient);
+}
+
+input:hover {
+  background: var(--color-primary-dark-varient);
+}
+
+@media screen and (min-width: 1150px) {
+  .container.contact__container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 50%;
+    gap: 12%;
+  }
+
+  .contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
