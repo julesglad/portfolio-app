@@ -23,7 +23,7 @@ const Portfolio = () => {
           </div>
           <h3>Practice.Go</h3>
           <h5>A web application for musicians to track their progress.</h5>
-          <a href="https://github.com" className="btn" target="_blank">
+          <a href="https://github.com/julesglad/Practice-Go" className="btn" target="_blank">
             Github
           </a>
         </article>
