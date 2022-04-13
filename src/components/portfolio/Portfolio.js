@@ -1,6 +1,7 @@
 import "./portfolio.css";
 import portfoliolandingpage from "../../assets/landingpage.png";
 import newproject from "../../assets/newproject1.png";
+import springbootdatabase from "../../assets/springbootdatabase.png"
 
 const Portfolio = () => {
   return (
@@ -29,11 +30,11 @@ const Portfolio = () => {
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={newproject} alt="" />
+            <img src={springbootdatabase} alt="" />
           </div>
           <h3>New Employee Database</h3>
           <h5>Created with Java Springboot and MySQL.</h5>
-          <a href="https://github.com" className="btn" target="_blank">
+          <a href="https://github.com/julesglad/Backend-Employee-Database" className="btn" target="_blank">
             Github
           </a>
         </article>
