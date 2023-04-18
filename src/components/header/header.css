@@ -1,26 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Rock+3D&family=Sacramento&display=swap");
 
 .header__container {
-  height: 100%;
-  position: relative;
-  padding-bottom: 10rem;
-  padding-top: 10rem;
-  gap: 2rem;
-  width: 100%;
   background-image: url("../../assets/backgroundclouds.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  color: black;
-  opacity: 0.8;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  color: black
 }
 
-.header__container h1 {
+.title h1 {
   font-size: 3rem;
   text-align: center;
   padding-top: 3rem;
   font-family: "Rock 3D", cursive;
   margin-right: 1rem;
+  color:rgb(2, 20, 32) !important
+
 }
 
+.title {
+  margin-top: 200px;
+}
 .header__container h5 {
   text-align: center;
   font-size: 1.5rem;
@@ -53,11 +59,11 @@
   content: "";
   width: 1px;
   height: 3rem;
-  background: black;
+  background:var(--color-bg-varient);
 }
 
 .header__socials-icon {
-  color: black;
+  color: var(--color-bg-varient);
   font-size: 2rem;
 }
 
@@ -78,6 +84,32 @@
   overflow: hidden;
 }
 
+.cloud2 {
+  position: absolute;
+  right: -10%;
+  top: 90%;
+  width: 1000px;
+  z-index: -1;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes cloud2 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+
+  
+}
+
 @keyframes cloudone {
   0% {
     transform: translate(0, 0px);
@@ -88,6 +120,8 @@
   100% {
     transform: translate(0, -0px);
   }
+
+  
 }
 
 /* Text animation */
@@ -116,11 +150,12 @@
 /* media queries */
 
 @media screen and (min-width: 450px) {
-  .header__container h1 {
+  .title h1 {
     font-size: 5rem;
     text-align: center;
     padding-top: 3rem;
     font-family: "Rock 3D", cursive;
+    color:rgb(2, 20, 32) !important
   }
 
   .header__container h5 {

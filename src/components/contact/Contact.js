@@ -36,18 +36,11 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <BsFillTelephoneFill className="contact__option-icon" />
-            <h4>Call or Text</h4>
-            <h5>1-870-770-5784</h5>
-            {/* <a href="mailto:gladden.julie@gmail.com" target="_blank">
-              Send a message
-            </a> */}
-          </article>
+        
           <article className="contact__option">
             <MdEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>gladden.julie@gmail.com</h5>
+            <h5 className="contact-text">gladden.julie@gmail.com</h5>
             <a href="mailto:gladden.julie@gmail.com" target="_blank">
               Send a message
             </a>

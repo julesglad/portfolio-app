@@ -1,3 +1,4 @@
+import BlogPosts from "./components/BlogPosts/BlogPosts";
 import About from "./components/about/about";
 import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
@@ -9,12 +10,13 @@ import Portfolio from "./components/portfolio/Portfolio";
 
 function App() {
   return (
-    <div>
+    <div className="header__container">
       <Header />
       <Nav />
       <About />
       <Experience />
       <Portfolio />
+      <BlogPosts />
       <Contact />
       <Footer /> 
     </div>

@@ -16,18 +16,23 @@
   gap: 0.5rem;
 }
 
+.contact-text  {
+  font-size: 15px !important;
+  color: white !important
+}
+
 .contact__option {
-  background: var(--color-primary);
+  background: var(--color-primary-variant-opac);
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
+  color: white;
 }
 
 .contact__option:hover {
   background: var(--color-primary-dark-varient);
-  border-color: var(--color-primary-variant);
 }
 
 .contact__option-icon {
@@ -38,7 +43,7 @@
 .contact__option a {
   margin-top: 0.7rem;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: var(--color-primary-variant);
 }
 

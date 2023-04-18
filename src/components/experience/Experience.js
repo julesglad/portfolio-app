@@ -1,5 +1,6 @@
 import "./experience.css";
 import { HiBadgeCheck } from "react-icons/hi";
+import Tooltip from "@mui/material/Tooltip";
 
 const Experience = () => {
   return (
@@ -7,60 +8,43 @@ const Experience = () => {
       <h2>Experience</h2>
       <div className="container experience__container">
         <div className="experience__frontend">
-          <h3>Here's what I can do</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>HTML</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>CSS</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>JavaScript</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>React</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>Java</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>Spring Boot</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>MySQL</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>Thymeleaf</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>Spring Data JPA</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>Git</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>Photoshop</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>Lightroom</h4>
-            </article>
-            <article className="experience__details">
-              <HiBadgeCheck className="experience__details-icon" />
-              <h4>Adobe Premiere</h4>
-            </article>
+          <div className="row row-cols-md-4 text-center">
+            <Tooltip title="Angular">
+              <i className="devicon-angularjs-plain col"></i>
+            </Tooltip>
+            <Tooltip title="Bootstrap">
+              <i className="devicon-bootstrap-plain col"></i>
+            </Tooltip>
+            <Tooltip title="Figma">
+              <i className="devicon-figma-plain col"></i>
+            </Tooltip>
+            <Tooltip title="Azure">
+              <i className="devicon-azure-plain col"></i>
+            </Tooltip>
+            <Tooltip title="Firebase">
+              <i className="devicon-firebase-plain col"></i>
+            </Tooltip>
+            <Tooltip title="HTML">
+              <i className="devicon-html5-plain col"></i>
+            </Tooltip>
+            <Tooltip title="Javascript">
+              <i className="devicon-javascript-plain col"></i>
+            </Tooltip>
+            <Tooltip title="Typescript">
+              <i className="devicon-typescript-plain col"></i>
+            </Tooltip>
+            <Tooltip title="VS Code">
+              <i className="devicon-vscode-plain col"></i>
+            </Tooltip>
+            <Tooltip title="Webpack - Module Federation">
+              <i className="devicon-webpack-plain col"></i>
+            </Tooltip>
+            <Tooltip title="React">
+              <i className="devicon-react-original col"></i>
+            </Tooltip>
+            <Tooltip title="CSS">
+              <i className="devicon-css3-plain col"></i>
+            </Tooltip>
           </div>
         </div>
       </div>

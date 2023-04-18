@@ -4,28 +4,23 @@ import cloud from "../../assets/cloud1.png";
 
 const About = () => {
   return (
-    <section id="about" className="about__background">
+    <section id="about" className="about__background container">
       <h2>About</h2>
       <div className="about__backcloud">
         <img src={cloud} alt="cloud" />
       </div>
 
-      <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="About Image" />
-          </div>
-        </div>
-        <div className="about__content">
+      <div className="row justify-content-center">
+        <div className="about__content col-md-8">
+          <h1>Hey, I'm Julie ✋🏻 </h1>
           <p>
-            Hi, I'm Julie Gladden. I'm a Web Developer based in Arkansas, USA. I
-            am a self-taught developer. My focus is Front-End developement in
-            React, also with experience in Java Springboot using Maven. I am
-            quick to learn, team-focused, and looking forward to taking my first
-            steps into the world of tech.{" "}
+            I'm a software engineer based in the USA. 🌎 I am passionate about front-end
+            development with Angular.
+            <br />
+            ✅Fast, self-driven learner ✅Team Player ✅Band Director turned SWE 
           </p>
 
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className="btn btn-primary float-end">
             Let's talk!
           </a>
         </div>

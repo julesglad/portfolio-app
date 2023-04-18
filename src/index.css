@@ -13,8 +13,8 @@
 :root {
   --color-bg: #0c0c13;
   --color-bg-varient: #4e525f;
-  --color-primary: #273742;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-primary: rgb(42, 58, 70, 0.8);
+  --color-primary-variant: rgba(77, 181, 255, 0.6);
   --color-primary-variant-opac: rgba(39, 55, 66, 0.9);
   --color-primary-dark-varient: #2d414d;
   --color-white: #fff;
@@ -100,6 +100,7 @@ a:hover {
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
+  margin-right: 5px
 }
 
 .btn:hover {

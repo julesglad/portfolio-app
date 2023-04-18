@@ -6,11 +6,16 @@
   height: auto;
 }
 
+i {
+  font-size: 60px
+}
+
 .experience__container > div {
   background: var(--color-primary);
   padding: 3rem;
   border-radius: 2rem;
   border: 1px solid transparent;
+  color: white;
 }
 
 .experience__container > div h3 {
@@ -21,7 +26,7 @@
 
 .experience__content {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto auto auto auto;
   gap: 2rem;
   padding: 3rem;
 }
@@ -37,12 +42,25 @@
   font-size: 1.5rem;
 }
 
+i {
+  padding: 20px 0px 10px 0px;
+  transition: all .2s ease-in-out;
+}
+
+i:hover {
+  transform: scale(1.1); }
+
+.cards {
+background-color: rgb(197, 196, 196, 70%);
+}
+
 @media screen and (min-width: 900px) {
   .experience__container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 1rem;
+    color: white;
   }
 
   .experience__content {
