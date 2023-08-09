@@ -12,12 +12,9 @@ const About = () => {
 
       <div className="row justify-content-center">
         <div className="about__content col-md-8">
-          <h1>Hey, I'm Julie ✋🏻 </h1>
+          <h1>Hey, I'm Julie 👋🏻 </h1>
           <p>
-            I'm a software engineer based in the USA. 🌎 I am passionate about front-end
-            development with Angular.
-            <br />
-            ✅Fast, self-driven learner ✅Team Player ✅Band Director turned SWE 
+            I'm a software engineer based in the USA. I'm front-end focused with Angular and React in my toolkit.
           </p>
 
           <a href="#contact" className="btn btn-primary float-end">
